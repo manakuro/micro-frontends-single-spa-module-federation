@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://localhost:3001/remoteEntry.js"></script>
+    <script src="http://localhost:3002/remoteEntry.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto:400,700&display=swap"
+    />
+  <style>
+    html, body {
+      scroll-behavior: smooth;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Roboto';
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    main > * > * {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<div style="height: 100%; display: flex; flex-direction: column;">
+  <div id="single-spa-application:header"></div>
+  <main style="display: flex; flex: 1;">
+    <div id="single-spa-application:body" style="width: 100%"></div>
+  </main>
+  <div id="single-spa-application:footer"></div>
+</div>
+</body>
+</html>
