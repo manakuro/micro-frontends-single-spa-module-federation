@@ -1,7 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin')
 const path = require('path')
 const outputPath = path.resolve(__dirname, 'dist')
+
+require('dotenv').config({
+  path: path.join(__dirname, '../../.env'),
+})
 
 module.exports = {
   entry: './src/index',
@@ -52,6 +57,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
+    }),
+    new HtmlWebpackTagsPlugin({
+      tags: [process.env.NAV_APP, process.env.BODY_APP],
+      append: false,
+      publicPath: false,
     }),
   ],
 }
