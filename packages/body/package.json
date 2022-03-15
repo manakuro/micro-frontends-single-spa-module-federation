@@ -15,9 +15,9 @@
     "css-loader": "^3.5.3",
     "postcss-loader": "^4.1.0",
     "style-loader": "2.0.0",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.1",
     "vue-style-loader": "^4.1.2",
-    "sass-loader": "^10.1.0"
+    "sass-loader": "^12.6.0"
   },
   "dependencies": {
     "autoprefixer": "^10.1.0",
