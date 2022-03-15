@@ -4,6 +4,9 @@
     "start": "webpack serve --port 3002",
     "build": "webpack --mode=production"
   },
+  "engines": {
+    "node": "16.8.0"
+  },
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
