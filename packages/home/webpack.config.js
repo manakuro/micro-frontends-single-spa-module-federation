@@ -23,7 +23,9 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: outputPath,
+    static: {
+      directory: outputPath,
+    },
   },
 
   module: {

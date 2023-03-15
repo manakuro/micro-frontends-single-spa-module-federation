@@ -23,7 +23,9 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: outputPath,
+    static: {
+      directory: outputPath,
+    },
   },
 
   module: {
@@ -65,7 +67,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       remotes: {},
       exposes: {
-        Body: './src/app',
+        './Body': './src/app',
       },
       shared: ['vue', 'single-spa', 'single-spa-vue'],
     }),
